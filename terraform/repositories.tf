@@ -15,7 +15,8 @@ locals {
     },
     "callisto-test-2" : {
       "checks" : concat(local.checks.drone, local.checks.code_analysis)
-    }
+    },
+    "callisto-docs" : { }
   }
   repository_configs = {
     for k, v in local.repositories : k => {
